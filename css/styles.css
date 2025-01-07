@@ -1,0 +1,327 @@
+body{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #0e0f0f;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+.navegation{
+
+
+    display: flex;
+    justify-content: center;
+    background-color: #0e0f0f;
+    width: 100vw;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    gap: 50px;
+ 
+
+}
+
+ul{
+
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+}
+
+li a{
+
+    
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.SobreMi{
+    
+    display: flex;
+    height: 450px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.container-paragraphs{
+
+    width: 40%;
+    
+    margin-bottom: 4%;
+
+}
+
+.container-title h1{
+
+    font-size: 60px;
+    text-align: center;
+    animation: titleMove 1.4s infinite alternate-reverse;
+    
+
+
+}
+
+.container-paragraphs h2{
+
+    font-size: 40px;
+    text-align: center;
+    height: 0;
+    margin-bottom: 13%;
+    margin-top: 11%;
+    color: rgb(60, 255, 0);
+    text-shadow: 1px 0 4px rgb(60, 255, 0); ;
+    
+
+}
+
+.container-paragraphs p{
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 34px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    word-wrap: break-word;
+   
+
+}
+span{
+
+    color: rgb(60, 255, 0);
+    font-size: 40px;
+
+}
+
+.icon{
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    word-wrap: break-word;
+
+}
+
+.container-paragraphs img{
+        
+        word-wrap: break-word;
+        width:  70px;
+        height: 70px;
+        cursor: pointer;
+        transition: all .6s ;
+
+}
+
+.container-paragraphs .instagram:hover{
+
+    filter: drop-shadow(1px 0 10px #ff006a);
+    scale: 1.3;
+    transition: all .6s ;
+ 
+ }
+ 
+
+.container-paragraphs .twitch:hover{
+
+    filter: drop-shadow(1px 0 10px #6f00ff);
+    scale: 1.3;
+    transition: all .6s ;
+ 
+ }
+ 
+
+.container-paragraphs .youtube:hover{
+
+   filter: drop-shadow(1px 0 10px #ff002b);
+   scale: 1.3;
+   transition: all .6s ;
+
+}
+
+ @keyframes titleMove{
+
+    from{
+
+        scale: 1.1;
+        text-shadow: 1px 0 15px #fff;
+
+    }
+
+    do{
+
+        scale: 1.2;
+       
+    }
+
+ }
+
+
+.button-contact{
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
+.button-contact button{
+
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: limegreen;
+    border-radius: 40px;
+    border: 2px solid #000000;
+
+
+
+}
+
+button img {
+
+    width: 80px;
+    height: 80px;
+ 
+  }
+
+  button a{
+
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+
+  }
+
+  .container-sobre-mi{
+
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    border: 1px solid #fff;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+
+  }
+
+.card{
+
+    width: 250px;
+    height: auto;
+
+}
+
+.card img{
+    
+    width: 200px;
+    height: 190px;
+    object-fit: cover;
+
+  
+
+}
+@media (max-width: 768px) {
+
+  .navegation{
+
+    height: auto;
+    display: inline-block;
+
+  } 
+
+  .navegation li a{
+
+    font-size: 14px;
+
+  }
+
+  .SobreMi{
+
+   width: 100;
+   height: fit-content;
+   flex-direction: column;
+   flex-wrap: wrap;
+
+  }
+
+  .container-paragraphs h2{
+
+   margin-top: -30px;
+   
+
+  }
+
+ .container-paragraphs{
+
+   width: fit-content;
+
+ }
+
+ .container-sobre-mi{
+   
+   width: 100vb;
+   flex-wrap: wrap;
+   height: auto;
+
+   
+
+ }
+
+
+
+ .card p{
+
+   flex-wrap: wrap;
+
+ }
+
+ .card{
+
+   width: 300px;
+   height: auto;
+   flex-wrap:wrap ;
+
+ }
+
+ .card img{
+
+   width: 260px !important;
+   border: 1px solid whitesmoke;
+
+ }
+
+ .navegation{
+   
+   flex-wrap: wrap;
+
+ }
+
+ .navegation ul{
+
+   justify-content: center;
+   gap: 40px;
+
+ }
+
+ }

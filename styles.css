@@ -1,0 +1,299 @@
+    body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #414141;
+        min-height: 100vh;
+
+    }
+
+
+    header {
+        background-color: #fb5607;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    header h1 {
+        position: absolute;
+        margin: 10px;
+        text-align: start;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+
+
+    }
+
+    span {
+
+        color: #fff;
+    
+
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: end;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #000000;
+    }
+
+    ::placeholder{
+
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #535353;
+    
+    }
+
+    .hero {
+
+        background-image: url(imagen/pexels-trace-707046.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        padding: 120px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 30px;
+        color: #fff;
+        -webkit-text-stroke: black;
+        -webkit-text-stroke-width: 1px;
+        
+    }
+
+
+    .cars img {
+        padding: 0px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .cars h2 {
+        text-align: center;
+    }
+
+    #cars-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .cars-item {
+        background: #fff;
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cars-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 1px 0 20px rgba(0, 0, 0, 0.445);
+    }
+
+    footer {
+        background-color: #fb5607;
+        color: #fcf7f7;
+        text-align: center;
+        padding: 12px;
+        width: 1325px;
+        bottom: 0;
+        height: 100px;
+        
+    }
+
+    .admin{
+
+        background-color: #f4f4f4;
+        color: #000000;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+
+    }
+
+    .admin form {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        box-shadow: 1px 0 10px #000000;
+    }
+
+    .admin form label,
+    .admin form input,
+    .admin form textarea,
+    .admin form button {
+        margin-bottom: 15px;
+        color: #fb5607;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .adminform textarea {
+
+        width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent   ;
+    border-bottom: solid #d10000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    resize: none;
+
+    }
+
+    .admin form input{
+
+        border-bottom: #000000 solid;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        background-color: transparent;
+        font-size: 17px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+
+    }
+
+    textarea{
+
+        resize: none;
+
+    }
+
+    .admin form input:focus{
+
+        outline: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+
+    }
+
+    .admin form .imagen_file{
+
+        border:none;
+
+    }
+
+    .admin form button {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .admin form button:hover {
+        background-color: #d48806;
+    }
+
+    @media (max-width: 768px) {
+        /* Styles for screens less than 768px wide */
+      
+        header h1 {
+          font-size: 24px;
+        }
+      
+        .hero {
+          padding: 50px;
+          font-size: 20px;
+        }
+        
+        .cars img{
+
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .cars-item {
+          width: calc(50% - 20px); /* 50% width with 20px margin on each side */
+          
+        }
+      
+        footer {
+          width: 100%; /* Set footer to 100% width */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        /* Styles for screens less than 480px wide */
+      
+        .cars-item {
+          width: 100%; /* Set car items to 100% width on very small screens */
+        }
+      }
+
+@media (max-width: 768px) {
+  /* Styles for screens less than 768px wide (tablets and smaller) */
+
+  header, section {
+    padding: 20px;
+  }
+
+  .admin form {
+    flex-direction: column; /* Stack form elements vertically */
+  }
+
+  .admin form label,
+  .admin form input,
+  .admin form textarea,
+  .admin form button {
+    width: 100%; /* Make form elements full width */
+    margin-bottom: 10px; /* Adjust spacing for smaller screens */
+  }
+}
